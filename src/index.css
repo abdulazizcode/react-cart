@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header{
+	height:80px;
+	box-shadow: 0 0 5px #ccc;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	padding-left:20px;
+	font-family: 'Arial';
+}
+.nav{
+	display:flex;
+}
+.nav li{
+	list-style-type: none;
+	padding-right:20px;
+	
+}
+.nav li a{
+	text-decoration:none;
+	color:black;
+	font-weight:bolder;
+}
+.products{
+	display:flex;
+	flex-wrap:wrap;
+	padding:20px;
+	justify-content:center;
+}
+.product{
+	margin:20px;
+	box-shadow: 0 0 5px #ccc;
+	padding:10px 20px 10px 20px;
+}
+
+.product img {
+	height:150px;
+}
+.product h3{
+	text-align:center;
+}
+.product .btn{
+	width:100%;
+	padding:10px;
+	background:red;
+	border:1px solid #fff;
+	font-size:20px;
+	color:#fff;
+	border-radius:5px;
+	outline:none;
+}
+.product .btn:hover{
+	border:1px solid #ccc;
+	background:#fff;
+	color:black;
+}
+.btns-center{
+	text-align:center;
+	margin-top:15px;
+}
+.btns-center span{
+	font-size:25px;
+	padding:0 10px 0 10px;
+}
+.add {
+	padding:10px;
+	width:50px;
+	border:1px solid #ccc;
+	outline:none;
+	border-radius:5px;
+}
+.add:hover{
+	background:#ccc;
+	outline:inherit;
+}
+.remove{
+	padding:10px;
+	width:50px;
+	border:1px solid #ccc;
+	outline:none;
+	border-radius:5px;
+}
+.remove:hover{
+	background:#ccc;
+	outline:inherit;
+}
+.product p {
+	text-align:center;
+	padding:20px;
+	font-size:25px;
 }
